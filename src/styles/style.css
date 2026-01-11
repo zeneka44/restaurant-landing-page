@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+.container {
+  max-width: var(--container-width);
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 16px 0;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.header__logo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header__logo-image {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.header__link {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.9;
+  transition: opacity var(--transition);
+}
+
+.header__link:hover {
+  opacity: 1;
+}
+
+.header__link--active {
+  position: relative;
+  opacity: 1;
+}
+
+.header__link--active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 2px;
+  background: var(--color-primary);
+}
+
+/* Buttons */
+.btn {
+  color: #fff;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn--primary {
+  background: var(--color-primary);
+}
+
+.btn--ghost {
+  border-color: #fff;
+
+}
+
+/* Hero section */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 120px;
+  background: url("../assets/images/header-bg.jpg") center/cover no-repeat;
+  position: relative;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.hero__kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 12px;
+  opacity: 0.85;
+  margin-bottom: 12px;
+}
+
+.hero__title {
+  font-size: 64px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-bottom: 24px;
+}
+
+.hero__actions {
+  display: inline-flex;
+  gap: 16px;
+}
+

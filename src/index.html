@@ -1,13 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant Landing</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <div id="app">
-      <h1>TasteMax</h1>
-    </div>
+    <header class="header">
+      <div class="container header__inner">
+        <a class="header__logo" href="#home" aria-label="Go to home">
+          <img
+            class="header__logo-image"
+            src="./assets/images/logo-light.svg"
+            alt="FoodMax logo"
+          />
+        </a>
+
+        <nav class="header__nav" aria-label="Main navigation">
+          <a class="header__link header__link--active" href="#home">Home</a>
+          <a class="header__link" href="#pages">Pages</a>
+          <a class="header__link" href="#menu">Menu</a>
+          <a class="header__link" href="#order">Order</a>
+          <a class="header__link" href="#blog">Blog</a>
+          <a class="header__link" href="#contact">Contact</a>
+          <a class="header__link" href="#shop">Shop</a>
+        </nav>
+
+        <a class="btn btn--primary header__cta" href="#reservation"
+          >Reservation</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero__overlay"></div>
+
+        <div class="container hero__content">
+          <p class="hero__kicker">Hello, new friend</p>
+          <h1 class="hero__title">Reserve your table</h1>
+
+          <div class="hero__actions">
+            <a class="btn btn--ghost" href="#reservation">Book a table</a>
+            <a class="btn btn--outline" href="#menu">Open menu</a>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
