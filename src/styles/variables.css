@@ -1,0 +1,10 @@
+:root{
+  --color-primary: #e38b3a;
+  --color-bg: #0f1c1f;
+  --color-text: #ffffff;
+
+  --container-width: 1200px;
+
+  --radius-sm: 4px;
+  --transition: 0.2s ease;
+}
