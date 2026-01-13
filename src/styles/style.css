@@ -239,15 +239,15 @@ h1, h2, h3, p {
 
 /* Reservation section */
 .reservation {
+  display: block;
   padding: 110px 0;
   background: url("../assets/images/reservation-bg.jpg") center/cover no-repeat;
   overflow: hidden;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
 }
 
 .reservation__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   position: relative;
   z-index: 1;
   align-items: center;
