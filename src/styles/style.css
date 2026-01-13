@@ -233,3 +233,66 @@ h1, h2, h3, p {
   min-height: 320px;
 }
 
+/* Reservation section */
+.reservation {
+  padding: 110px 0;
+  background: url("../assets/images/reservation-bg.jpg") center/cover no-repeat;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.reservation__inner {
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  gap: 40px;
+}
+
+.reservation__title {
+  font-size: 56px;
+  margin: 10px 0 24px;
+}
+
+.reservation__actions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+/* Hours Card */
+
+.hours-card {
+  background: rgba(12, 20, 22, 0.88);
+  border-radius: 10px;
+  padding: 44px 48px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+}
+
+.hours-card__item {
+  text-align: center;
+  padding: 18px 0;
+}
+
+.hours-card__day {
+  margin: 0 0 12px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.hours-card__time {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.hours-card__divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 16px 0;
+}
+
+
