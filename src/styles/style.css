@@ -157,3 +157,142 @@ h1, h2, h3, p {
   gap: 16px;
 }
 
+/* Abous us section*/
+
+.mosaic {
+  padding: 96px 0;
+}
+
+.mosaic__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.mosaic__card {
+  background: transparent;
+}
+
+.mosaic__card--text {
+  padding-top: 12px;
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+.eyebrow::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 44px;
+  height: 2px;
+  background: var(--color-primary);
+}
+
+.title {
+  font-size: 40px;
+  line-height: 1.1;
+  margin-bottom: 18px;
+}
+
+.text {
+  max-width: 520px;
+  font-size: 14px;
+  line-height: 1.7;
+  opacity: 0.75;
+  margin-bottom: 22px;
+}
+
+.mosaic__card--image {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.mosaic__img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.mosaic__card--wide {
+  grid-column: 2 / 3;
+}
+
+.mosaic__card--wide .mosaic__img {
+  min-height: 320px;
+}
+
+/* Reservation section */
+.reservation {
+  padding: 110px 0;
+  background: url("../assets/images/reservation-bg.jpg") center/cover no-repeat;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.reservation__inner {
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  gap: 40px;
+}
+
+.reservation__title {
+  font-size: 56px;
+  margin: 10px 0 24px;
+}
+
+.reservation__actions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+/* Hours Card */
+
+.hours-card {
+  background: rgba(12, 20, 22, 0.88);
+  border-radius: 10px;
+  padding: 44px 48px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+}
+
+.hours-card__item {
+  text-align: center;
+  padding: 18px 0;
+}
+
+.hours-card__day {
+  margin: 0 0 12px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.hours-card__time {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.hours-card__divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 16px 0;
+}
+
+
