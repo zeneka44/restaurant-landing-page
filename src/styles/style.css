@@ -669,3 +669,177 @@ h1, h2, h3, p {
   margin: var(--spacing-xs);
   cursor: pointer;
 }
+
+/* Media Queries */
+
+/* Tablet and below (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Base spacing and typography */
+  .container {
+    padding: 0 var(--spacing-lg);
+  }
+
+  .btn {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  /* Header */
+  .header {
+    padding: var(--spacing-sm) 0;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__logo-image {
+    height: 34px;
+  }
+
+  /* Hero section */
+  .hero {
+    padding-top: 96px;
+  }
+
+  .hero__title {
+    font-size: 2.5rem;
+  }
+
+  .hero__actions {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* About / Mosaic section */
+  .mosaic {
+    padding: 72px 0;
+  }
+
+  .mosaic__grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+  }
+
+  .mosaic__card--wide {
+    grid-column: auto;
+  }
+
+  /* Reservation section */
+  .reservation {
+    padding: 80px 0;
+  }
+
+  .reservation__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .reservation__title {
+    font-size: 2.25rem;
+  }
+
+  .reservation__actions {
+    flex-wrap: wrap;
+  }
+
+  .hours-card {
+    padding: var(--spacing-xl) var(--spacing-lg);
+    max-width: 520px;
+    justify-self: center;
+  }
+
+  /* Menu section */
+  .menu {
+    padding: 72px 0 84px;
+  }
+
+  .menu__title {
+    font-size: 2.125rem;
+  }
+
+  .menu__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dish-card__img {
+    height: 220px;
+  }
+
+  /* Newsletter section */
+  .newsletter {
+    padding: 72px 0;
+  }
+
+  .newsletter__title {
+    font-size: 2.125rem;
+  }
+
+  .newsletter__form {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter__btn {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 64px 0 var(--spacing-lg);
+  }
+
+  .footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-2xl);
+  }
+
+  .footer__brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  /* Base spacing */
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+
+  /* Typography scale */
+  .hero__title {
+    font-size: 2rem;
+  }
+
+  .reservation__title {
+    font-size: 1.875rem;
+  }
+
+  .menu__title,
+  .newsletter__title {
+    font-size: 1.75rem;
+  }
+
+  /* Footer layout */
+  .footer__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__socials a {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer__newsletter-form {
+    flex-direction: column;
+    padding: var(--spacing-xs);
+    gap: var(--spacing-xs);
+  }
+
+  .footer__newsletter-input,
+  .footer__newsletter-btn {
+    width: 100%;
+    margin: 0;
+  }
+}
