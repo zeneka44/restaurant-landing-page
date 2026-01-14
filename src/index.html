@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
+    <!-- Header Section -->
     <header class="header">
       <div class="container header__inner">
         <a class="header__logo" href="#home" aria-label="Go to home">
@@ -21,10 +22,10 @@
 
         <nav class="header__nav" aria-label="Main navigation">
           <a class="header__link header__link--active" href="#home">Home</a>
-          <a class="header__link" href="#about-us">Abous Us</a>
+          <a class="header__link" href="#about">About Us</a>
           <a class="header__link" href="#reservation">Reservation</a>
           <a class="header__link" href="#order">Order</a>
-          <a class="header__link" href="#blog">Blog</a>
+          <a class="header__link" href="#blog">Newsletter</a>
           <a class="header__link" href="#contact">Contact</a>
         </nav>
 
@@ -33,12 +34,17 @@
         >
       </div>
     </header>
+
+    <!-- Main Content -->
     <main>
+      <!-- Hero Section -->
       <section class="hero" id="home">
         <div class="hero__overlay"></div>
         <div class="container hero__content">
-          <p class="hero__kicker">Hello, new friend</p>
-          <h1 class="hero__title">Reserve your table</h1>
+          <div class="hero__text">
+            <p class="hero__kicker">Hello, new friend</p>
+            <h1 class="hero__title">Reserve your table</h1>
+          </div>
 
           <div class="hero__actions">
             <a class="btn btn--ghost" href="#reservation">Book a table</a>
@@ -46,8 +52,11 @@
           </div>
         </div>
       </section>
-      <section class="mosaic" id="about-us">
+
+      <!-- About Section -->
+      <section class="mosaic" id="about">
         <div class="container mosaic__grid">
+          <!-- About Card -->
           <article class="mosaic__card mosaic__card--text">
             <p class="eyebrow">ABOUT US</p>
             <h2 class="title">We Invite You to Taste Real<br />Street Food</h2>
@@ -60,6 +69,7 @@
             <a class="btn btn--primary" href="#read-more">Read more</a>
           </article>
 
+          <!-- Image Card 1 -->
           <figure class="mosaic__card mosaic__card--image">
             <img
               class="mosaic__img"
@@ -67,6 +77,8 @@
               alt="Chef plating a dish"
             />
           </figure>
+
+          <!-- Image Card 2 -->
           <figure class="mosaic__card mosaic__card--image">
             <img
               class="mosaic__img"
@@ -75,6 +87,7 @@
             />
           </figure>
 
+          <!-- Burgers Menu Card -->
           <article class="mosaic__card mosaic__card--text">
             <p class="eyebrow">BURGERS MENU</p>
             <h2 class="title">Burgers Made with Quality Ingredients</h2>
@@ -87,6 +100,7 @@
             <a class="btn btn--primary" href="#read-more">Read more</a>
           </article>
 
+          <!-- Team Card -->
           <article class="mosaic__card mosaic__card--text">
             <p class="eyebrow">OUR TEAM</p>
             <h2 class="title">Created by People Who Love Food</h2>
@@ -98,6 +112,7 @@
             <a class="btn btn--primary" href="#read-more">Read more</a>
           </article>
 
+          <!-- Wide Image Card -->
           <figure class="mosaic__card mosaic__card--image mosaic__card--wide">
             <img
               class="mosaic__img"
@@ -107,26 +122,32 @@
           </figure>
         </div>
       </section>
+
+      <!-- Reservation Section -->
       <section class="reservation" id="reservation">
         <div class="container reservation__inner">
-          <p class="eyebrow">RESERVATION</p>
-          <h2 class="title reservation__title">WORKING HOURS</h2>
-          <div class="reservation__actions">
-            <a class="btn btn--primary" href="#book">BOOK A TABLE</a>
-            <a class="btn btn--outline" href="#contact">CONTACT US</a>
+            <p class="eyebrow">RESERVATION</p>
+            <h2 class="title reservation__title">Working Hours</h2>
+
+            <div class="reservation__actions">
+              <a class="btn btn--primary" href="#contact">Book a table</a>
+              <a class="btn btn--outline" href="#contact">Contact us</a>
+            </div>
           </div>
-        </div>
-        <div class="hours-card" aria-label="Working hours">
-          <div class="hours-card__item">
-            <h3 class="hours-card__day">Sunday to Tuesday</h3>
-            <p class="hours-card__time">09:00 AM – 10.00 PM</p>
-          </div>
-          <div class="hours-card__item">
-            <h3 class="hours-card__day">Friday to Saturday</h3>
-            <p class="hours-card__time">09:00 AM – 01.00 AM</p>
+          <div class="hours-card" aria-label="Working hours">
+            <div class="hours-card__item">
+              <h3 class="hours-card__day">Sunday to Tuesday</h3>
+              <p class="hours-card__time">09:00 AM – 10:00 PM</p>
+            </div>
+            <div class="hours-card__item">
+              <h3 class="hours-card__day">Friday to Saturday</h3>
+              <p class="hours-card__time">09:00 AM – 01:00 AM</p>
+            </div>
           </div>
         </div>
       </section>
+
+      <!-- Menu Section -->
       <section class="menu" id="order">
         <div class="container">
           <div class="menu__header">
@@ -139,6 +160,7 @@
             </p>
           </div>
           <div class="menu__grid">
+            <!-- Dish Card 1 -->
             <article class="dish-card">
               <img
                 class="dish-card__img"
@@ -162,6 +184,7 @@
               </div>
             </article>
 
+            <!-- Dish Card 2 -->
             <article class="dish-card">
               <img
                 class="dish-card__img"
@@ -185,6 +208,7 @@
               </div>
             </article>
 
+            <!-- Dish Card 3 -->
             <article class="dish-card">
               <img
                 class="dish-card__img"
@@ -210,7 +234,9 @@
           </div>
         </div>
       </section>
-      <section class="newsletter" id="blog">
+
+      <!-- Newsletter Section -->
+      <section class="newsletter" id="newsletter">
         <div class="newsletter__overlay"></div>
         <div class="container newsletter__inner">
           <div class="newsletter__content">
@@ -221,11 +247,8 @@
               offers - straight to your inbox. No spam, unsubscribe anytime.
             </p>
 
+            <!-- Newsletter Form -->
             <form class="newsletter__form" action="#" method="post" novalidate>
-              <label class="visually-hidden" for="newsletter-email"
-                >Email</label
-              >
-
               <input
                 class="newsletter__input"
                 id="newsletter-email"
@@ -247,9 +270,11 @@
         </div>
       </section>
     </main>
+
+    <!-- Footer Section -->
     <footer class="footer" id="contact">
       <div class="container footer__grid">
-        <!-- Brand -->
+        <!-- Brand Column -->
         <div class="footer__brand">
           <img
             class="footer__logo"
@@ -281,6 +306,8 @@
             </a>
           </div>
         </div>
+
+        <!-- Opening Hours Column -->
         <div class="footer__col">
           <h3 class="footer__title">Opening Restaurant</h3>
           <ul class="footer__list">
@@ -288,6 +315,8 @@
             <li>Fri – Sat: 09:00 AM – 02:00 AM</li>
           </ul>
         </div>
+
+        <!-- User Links Column -->
         <div class="footer__col">
           <h3 class="footer__title">User Links</h3>
           <ul class="footer__list">
@@ -299,6 +328,7 @@
           </ul>
         </div>
 
+        <!-- Contact Column -->
         <div class="footer__newsletter">
           <h3 class="footer__title">Contact Us</h3>
           <address class="footer__address">
@@ -306,6 +336,8 @@
             London, UK<br />
             <a href="tel:+442079460123">+44 20 7946 0123</a>
           </address>
+
+          <!-- Footer Newsletter Form -->
           <form class="footer__newsletter-form">
             <input
               class="footer__newsletter-input"
